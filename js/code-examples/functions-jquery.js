@@ -10,17 +10,23 @@ $('#hide-info').click(function () {
 });
 
 // collapse/expand all widgets
-$(".widget .header").click(function () {
-    var widget = $(this).parent();
-    if (widget.hasClass('collapsed')) {
-        widget.removeClass('collapsed');
-    } else {
-        widget.addClass('collapsed');
-    }
-});
+// $(".widget .header").click(function () {
+//     var widget = $(this).parent();
+//     if (widget.hasClass('collapsed')) {
+//         widget.removeClass('collapsed');
+//     } else {
+//         widget.addClass('collapsed');
+//     }
+// });
+
+    $(".widget .header").click(function(){
+        var widget = $(this).parent();
+        widget.toggleClass('collapsed');
+    });
+
 
 // close widget with animation
-//$(".widget .header").click(function () {
+// $(".widget .header").click(function () {
 //    var widget = $(this).parent();
 //    widget.find('.content').animate({
 //        height: "toggle",
@@ -28,11 +34,11 @@ $(".widget .header").click(function () {
 //    }, {
 //        duration: 400
 //    });
-//    widget.toggleClass('x-collapsed');
-//});
+//    widget.toggleClass('collapsed');
+// });
 
 // actions for top links
 $("#top-menu a").click(function () {
-    $("#breadcrumb").text(this.innerHTML + " : " + this.title);
+        $("#breadcrumb").text(this.innerHTML + " : " + this.title);
 });
 

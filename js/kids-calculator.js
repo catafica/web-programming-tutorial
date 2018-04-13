@@ -17,7 +17,7 @@ function addNumbers(a,b) {
         degete = a;
     }
 
-    for (; degete>0 ;) {
+    while (degete>0) {
         suma++;
         degete--;
         console.info(suma + ' - au mai ramas ' + degete + ' degetele')
