@@ -4,6 +4,7 @@ function getRow(firstName, lastName, phone, id) {
         '<td>' + lastName + '</td>' +
         '<td>' + phone + '</td>' +
         `<td><a href="tmp/remove-contact.html?id=${id}"> x</a></td>` +
+        // '<td><a href="tmp/remove-contact.html?id='+ id +'> x</a></td>' +
         '</tr>';
 
 }
@@ -32,6 +33,8 @@ function display() {
         '<td><input type="text" name="lastName" placeholder="Enter last name"></td>' +
         '<td>' +
             '<input type="text" name="phone" placeholder="Enter phone">' +
+        '</td>' +
+        '<td>' +
             '<button type="submit">Add</button>' +
         '</td>' +
         '</tr>';
